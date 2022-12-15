@@ -2,7 +2,7 @@
 
 ## Description
 
-THE Custom Vision Tool is the perfect tool for using custom vision.
+The custom Vision Tool is the perfect tool for using custom vision.
 
 ## Architecture of the repository
 
