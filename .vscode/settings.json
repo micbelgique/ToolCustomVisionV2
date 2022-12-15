@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/1310286d-4161-404b-b6eb-6a936fac3555/resourceGroups/RG_EdgeCity2022/providers/Microsoft.Web/sites/customvisiontool-ec2k22"
+}

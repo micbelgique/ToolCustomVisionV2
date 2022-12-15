@@ -1,0 +1,67 @@
+
+.content {
+    height: 95vh;
+    overflow-y: auto;
+  }
+  
+  
+  #overlayContainer #stream, #overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #stream {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  #overlay {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -99;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .detections {
+    height: 10%;
+    width: 20%;
+    z-index: 0;
+    margin: 5%;
+    animation: pulse 1s forwards;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .center {
+    margin: 0;
+    width: 50%;
+  }
+  
+  .preview-card {
+    top: 80%;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    position: absolute;
+    float: left;
+    clear: both;
+  }
+  

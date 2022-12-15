@@ -1,0 +1,92 @@
+<div  class="title">Custom vision model</div>
+
+<mat-card class="settings">
+  <!-- <mat-slide-toggle [(ngModel)]="isLocal" class="example-full-width">
+    Working localy?
+  </mat-slide-toggle> -->
+
+
+  <div *ngIf="this.isLocal">
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        placeholder="Put model blob link"
+        [(ngModel)]="modelEndpoint"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        placeholder="Put model labels blob"
+        [(ngModel)]="modelLabel"
+      />
+    </mat-form-field>
+  </div>
+
+ 
+
+
+
+
+  <div *ngIf="!this.isLocal">
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        placeholder="Put customvision endpoint"
+        [(ngModel)]="endpoint"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Put customvision key" [(ngModel)]="key" />
+    </mat-form-field>
+    <!-- <mat-slide-toggle [(ngModel)]="isStoringImage" class="example-full-width">
+      Storing image?
+    </mat-slide-toggle> -->
+  </div>
+
+  <div>
+
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        placeholder="URL API"
+        [(ngModel)]="URLApi"
+      />
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        placeholder="Filter"
+        [(ngModel)]="Filter"
+      />
+    </mat-form-field>
+    
+
+
+  </div>
+    
+  <label class="labeltool">Confidence
+       <b class="example-full-width">{{confidence.value}}</b>
+  </label>
+
+  <mat-slider class="example-full-width" (change)="updateSetting($event)"  #confidence  step="1" min="0" max="100" [value]="confidence">
+  </mat-slider>
+
+  <mat-form-field class="example-full-width">
+    <textarea  matInput
+    placeholder="Meta Data"
+    [(ngModel)]="MetaData">
+    </textarea>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="setEndpointsAndKey()"
+    class="example-full-width"
+   >
+    Save
+  </button>
+</mat-card>

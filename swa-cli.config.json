@@ -1,0 +1,14 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "custom-vision-tool": {
+      "appLocation": ".",
+      "outputLocation": "dist\\customVisionTool",
+      "appBuildCommand": "npm run build",
+      "run": "npm start",
+      "appDevserverUrl": "http://localhost:4200",
+      "appName": "customvisiontool2-k22",
+      "resourceGroupName": "customvisiontool2-k22-rg"
+    }
+  }
+}

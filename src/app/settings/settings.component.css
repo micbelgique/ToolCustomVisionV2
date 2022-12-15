@@ -1,0 +1,30 @@
+.settings {
+    height: 100%;
+    width: 100%;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 90%;
+  }
+
+.example-full-width {
+ width: 90%;
+}
+
+.title{
+  font-size: xx-large;
+  text-align: center;
+  margin: 3%;
+  text-transform: uppercase;
+  color:#0f2832;
+  }
+
+.labeltool{
+  color:#828282;
+  margin: 3%;
+  width: 90%;
+
+
+}
+

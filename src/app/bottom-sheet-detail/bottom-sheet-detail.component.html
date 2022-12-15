@@ -1,0 +1,9 @@
+<mat-nav-list style="margin-bottom: 20%">
+    <div style='text-align:center'>
+      <h1>{{ data.label | uppercase }}</h1>
+      <img style='height:10%' *ngIf=data.image [src]=data.image alt='object'>
+    </div>
+    <hr>
+    <p>{{data.description}}</p>
+    <p>{{data.hint}}</p>
+  </mat-nav-list>  

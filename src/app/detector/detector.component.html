@@ -1,0 +1,30 @@
+<div class='content'>
+    <mat-progress-bar *ngIf="this.isLoading && !this.stateContainer" mode="indeterminate"></mat-progress-bar>
+    <div [style.display]="!this.stateContainer ? 'block' : 'none'" style="text-align: center;">
+        <div *ngIf=this.alertContainer>
+            <p>{{alertMessage}}</p>
+            <button mat-raised-button (click)="this.initStreamDetection()" color="primary" i18n="@@facecamRetry">Réessayer</button>
+        </div>
+        <br>
+        <mat-form-field>
+            <mat-select placeholder="Video capture" [value]=this.videoSource>
+              <mat-option *ngFor="let cam of this.selectors" (click)="this.startStream(cam.id)" [value]="cam.id">
+                  Camera {{cam.label}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <div [style.display]=this.displayStream >
+          <div id="overlayContainer" class="center">
+            <video id="stream" #webcam autoplay></video>
+            <canvas #overlay id="overlay" ></canvas>
+          </div>
+        </div>
+    </div>
+    <div class="preview-card">
+        <div *ngIf=this.stateContainer >
+            <h1>{{stateMessage}}</h1>
+        </div>
+    </div>
+    </div>
+    
