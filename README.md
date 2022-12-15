@@ -29,6 +29,6 @@ This folder contains all the source code of the project. You can find the web cl
 - Web client: https://proud-tree-0f04e4e1e.1.azurestaticapps.net/
 
 ## Authors
-- [@Nathan Pire] (https://github.com/thelittlewozniak)
-- [@Antoine Smet](https://github.com/AntoineSmet/)
-- [@Lloyd Colart](https://github.com/Lloydcol/)
+- [@Nathan] (https://github.com/thelittlewozniak)
+- [@Antoine](https://github.com/AntoineSmet/)
+- [@Lloyd](https://github.com/Lloydcol/)
